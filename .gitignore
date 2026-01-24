@@ -1,0 +1,31 @@
+# Виртуальное окружение
+.venv/
+venv/
+env/
+ENV/
+
+# Кэш Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Распределения/установщики
+*.egg
+*.egg-info/
+dist/
+build/
+pip-wheel-metadata/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Операционные системы
+.DS_Store
+Thumbs.db
+
+# Переменные окружения
+.env
+.env.local
