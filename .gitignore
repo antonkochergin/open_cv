@@ -29,3 +29,57 @@ Thumbs.db
 # Переменные окружения
 .env
 .env.local
+
+
+
+# Создайте .gitignore если его нет
+cat > .gitignore << 'EOF'
+# Тестовые изображения
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.gif
+
+# Или конкретные файлы
+test_*.jpg
+test_*.png
+final_*.jpg
+quick_*.jpg
+*.jpg
+*.png
+*.jpeg
+*.bmp
+
+# Файлы OpenCV тестов
+test_output*
+camera_test.jpg
+test_video.avi
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
