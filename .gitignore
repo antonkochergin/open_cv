@@ -51,6 +51,7 @@ quick_*.jpg
 *.png
 *.jpeg
 *.bmp
+*.mp4
 
 # Файлы OpenCV тестов
 test_output*
