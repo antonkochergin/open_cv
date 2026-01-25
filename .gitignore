@@ -80,6 +80,7 @@ wheels/
 
 # Virtual Environment
 .venv/
+.venv_linux/
 venv/
 ENV/
 env/

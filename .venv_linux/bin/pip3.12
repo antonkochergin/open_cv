@@ -1,4 +1,4 @@
-#!/home/anton-kochergin/Work/open_cv/.venv_linux/bin/python3
+#!/home/anton-kochergin/Work/open_cv/.venv_linux/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
