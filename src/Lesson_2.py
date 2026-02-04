@@ -27,15 +27,16 @@ cv2.imshow("Result", img)
 cv2.waitKey(0)
 
 # Видео
-# cap = cv2.VideoCapture("./src/videos/video.mp4")
+""" cap = cv2.VideoCapture("./src/videos/video.mp4")
 
-# cap = cv2.VideoCapture(0)
-# cap.set(3, 400)  # ширина
-# cap.set(4, 300)  # высота
+cap = cv2.VideoCapture(0)
+cap.set(3, 400)  # ширина
+cap.set(4, 300)  # высота
 
-# while True:
-#     success, img = cap.read()
-#     cv2.imshow("Result", img)
+while True:
+    success, img = cap.read()
+    cv2.imshow("Result", img)
 
-#     if cv2.waitKey(1) & 0xFF == ord("q"):
-#         break
+    if cv2.waitKey(1) & 0xFF == ord("q"):
+        break
+ """
