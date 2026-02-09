@@ -1,16 +1,19 @@
 import cv2
 
 # import numpy as np
-img = cv2.imread("./src/images/face.jpeg")
+img = cv2.imread("./src/images/faces_4.jpeg")
 
-img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-
+gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 # вытягиваем модель, данная команда вытягивает файл как натренированную модель
-faces = cv2.CascadeClassifier("faces.xml")
+faces = cv2.CascadeClassifier("src/faces.xml")
 
 # координаты найденных лиц
-result = faces.detectMultiScale(img, scaleFactor=1, minNeighbors=3)
+result = faces.detectMultiScale(gray, scaleFactor=1.01, minNeighbors=5)
+
+# визуализвация
+for x, y, w, h in result:
+    cv2.rectangle(img, (x, y), (x + w, y + h), (0, 255, 0), thickness=2)
 
 
 cv2.imshow("Result", img)
