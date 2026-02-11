@@ -1,7 +1,6 @@
 import cv2
 import numpy as np
 
-
 # Видео
 # ------------------------------------------------
 # cap = cv2.VideoCapture("./src/videos/video.mp4")
